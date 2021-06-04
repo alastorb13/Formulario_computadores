@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Almacén de Computadores</title>
+
+
+<body>
+  <!--Cabecera--->
+  <header>
+    <h1 id = "title">Almacen de Computadoras</h1>
+  </header>
+  <!--Principal-->
+  <main><center>
+    <!--Inicio de formulario-->
+    <section >
+      <form id="survey-form" >
+
+        <label>Cantidad de computadores a comprar</label>
+        <input type="text" id="fname" name="fname">
+
+    <label id="name-label">Name</label>
+    <input id="name" 
+    type="text" placeholder="nombre" required>
+        
+        <label id="email-label">email</label>
+        <input id="email" type="email" required placeholder="email">
+        
+        <label id="number-label">cedula</label>
+        <input id="number" type="number" min="0"max="100" placeholder="cedula">
+        
+        <label>Tipo de computador</label>
+        <select placeholder="seleccione una opción" id="dropdown">
+          <option></option>
+          <option value="gamer">Gamer</option>
+          <option value="normal">Normal</option>
+        </select>
+        
+         <label target>Que calidad requiere :</label>
+       <div id='radio' display="flex" justify-content="space-around">
+    
+        <label ><input type='radio' name='period'  value='cheap'>barato</label>
+    
+        <label ><input type='radio' name='period'  value='cheapeast'>mas barato</label>
+    
+        <label ><input type='radio' name='period'  value='shitiest'>de cartón</label>
+        
+        </div>
+        
+        <label>perifericos</label>
+        <div>
+          <label><input type="checkbox" value= "mouse">mouse</label>
+          <label><input type="checkbox" value= "teclado">teclado</label>
+          <label><input type="checkbox" value= "wifi">Antena parabolica</label>
+        </div>
+        <label class ="submit">Software que desea tener preinstalado</label><textarea></textarea>
+        
+        <input type='submit' id='submit'>
+        
+  </form>
+      
+  </section>
+    </center></main>
+    
+  <footer>
+    <p id ="description">Es para su servicio y comodidad</p>
+  </footer>
+</body>
